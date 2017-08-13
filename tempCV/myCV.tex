@@ -36,9 +36,9 @@ ItalicFont = Fontin-Italic.otf
 \titlespacing{\section}{0pt}{3pt}{3pt}
 %Tweak a bit the top margin
 %\addtolength{\voffset}{-1.3cm}
-\addtolength{\oddsidemargin}{-.5in}
-\addtolength{\evensidemargin}{-.5in}
-\addtolength{\textwidth}{1in}
+\addtolength{\oddsidemargin}{-1.35cm}
+\addtolength{\evensidemargin}{-1.35cm}
+\addtolength{\textwidth}{2.7cm}
 \addtolength{\topmargin}{-.5in}
 \addtolength{\textheight}{1.5in}
 
@@ -82,16 +82,16 @@ ItalicFont = Fontin-Italic.otf
 %Section: Personal Data
 \section{Personal Data}
 
-\begin{tabular}{rl rl}
-    \textsc{email:}     & \href{mailto:kautsiitd@gmail.com}{kautsiitd@gmail.com} & \textsc{Phone:}     & +91 7503758135\\
-    \textsc{github:}     & \href{https://github.com/kautsiitd}{github.com/kautsiitd} & \textsc{CodeForces:}     & \href{http://codeforces.com/profile/kautsiitd}{codeforces.com/profile/kautsiitd}\\
+\begin{tabular}{lr lr}
+    \textsc{email:}	& \href{mailto:kautsiitd@gmail.com}{kautsiitd@gmail.com} & \textsc{Phone:}     & +91 7503758135\\
+    \textsc{github:}	& \href{https://github.com/kautsiitd}{github.com/kautsiitd} & \textsc{LinkedIn:}     & \href{https://www.linkedin.com/in/kautsya-kanu-a0328293}{linkedin.com/in/kautsya-kanu-a0328293}\\
      \textsc{CodeChef:}     & \href{https://www.codechef.com/users/kauts\_kanu}{codechef.com/users/kauts\_kanu} & \textsc{CodeChef Discuss:}     & \href{https://discuss.codechef.com/users/70101/kauts\_kanu}{discuss.codechef.com/users/70101/kauts\_kanu}\\
-    \textsc{LinkedIn:}     & \href{https://www.linkedin.com/in/kautsya-kanu-a0328293}{linkedin.com/in/kautsya-kanu-a0328293} & \textsc{Stack Overflow:}     & \href{https://stackoverflow.com/users/4614493/kautsya-kanu?tab=profile}{stackoverflow.com/users/4614493/kautsya-kanu}\\
+    \textsc{CodeForces:}     & \href{http://codeforces.com/profile/kautsiitd}{codeforces.com/profile/kautsiitd} & \textsc{Stack Overflow:}     & \href{https://stackoverflow.com/users/4614493/kautsya-kanu?tab=profile}{stackoverflow.com/users/4614493/kautsya-kanu}\\
 \end{tabular}
 
 %Section: Education
 \section{Education}
-\begin{tabular*}{\textwidth}{c @{\extracolsep{\fill}} lrr}	
+\begin{tabular*}{\textwidth}{c @{\extracolsep{\fill}} lcr}	
  2016 & B.Tech. in \textsc{Production And Industrial} & \textbf{IIT Delhi}, New Delhi & GPA: 7.84/10\\
 & \textbf{Minor in Computer Science} & & GPA: 8.18/10\\
 
@@ -104,46 +104,57 @@ ItalicFont = Fontin-Italic.otf
 \section{Projects}
 \begin{longtable}{r|p{16cm}}
 
- \textsc{May 2016} & \textbf{\href{https://github.com/kautsiitd/Unsupervised-Decomposition-of-a-Multi-Author-Document}{UnSupervised Decomposition of Multi Author Document}}\\
- \textsc{Mar 2016} & Investigated the role of feature selection that captures the syntactic patterns specific to an author.\\
-& N-grams, POS tagging and PQ Grams based features were explored on the un-lexicalised PCFG to capture the distinct writing styles of the author.\\
-& Trained GMM using iterative EM algorithm for clustering after Segment Elicitation process using sk-learn in python.\\\multicolumn{2}{c}{}\\
+%UnSupervised Decomposition of Multi Author Document
+ \textsc{May 2016} & \textbf{\href{https://github.com/kautsiitd/Unsupervised-Decomposition-of-a-Multi-Author-Document}{UnSupervised Decomposition of Multi Author Document}}\\ 
+ \textsc{Mar 2016} & Investigated the role of feature selection that captures the syntactic patterns specific to an author\\
+& N-grams, POS tagging and PQ Grams based features were explored on the un-lexicalised Probabilistic Context-Free Grammar using Stanford POS Tagger and Parser to capture the distinct writing styles\\
+& Elicited Segments using Gaussian Mixture Model learnt from iterative soft EM algorithm\\
+& Trained Multinomial Naive Bayes classifier over Vital Segments using sk-learn in python\\\multicolumn{2}{c}{}\\
 
+%Named Entity Recognition for Real Estate
 \textsc{Apr 2016} & \textbf{\href{https://github.com/kautsiitd/NER-for-Real-Estate}{Named Entity Recognition for Real Estate}} \\
-& Used MALLET to train CRF Model over tokenised Real Estate data of Delhi NCR for Named Entity Recognition.\\
-& Used existing gazetteer related to locations, first and last names, POS tagging and Regular Expressions as feature of words.\\
-& Explored Word2Vec model using large unlabelled corpus and used embeddings as features to achieve high F score.\\\multicolumn{2}{c}{}\\
+& Trained CRF Model using MALLET over tokenised Real Estate data of Delhi NCR for entity identification\\
+& Used Gazetteers related to locations, first and last names, POS tagging and RegEx as features of words\\
+& Explored Word Embeddings found using Word2Vec model on unlabelled corpus, to achieve high F score\\\multicolumn{2}{c}{}\\
 
+%Unsupervised and Supervised Hand Written Digit Recognition
 \textsc{Mar 2016} & \textbf{\href{https://github.com/kautsiitd/Unsupervised-Hand-Written-Digit-Recognition}{Unsupervised and Supervised Hand Written Digit Recognition}} \\
-& I used kMeans with PCA and GMM using EM algorithm with PCA for Unsupervised Hand Written Digit Recognition.\\
-& I used Standard Back propagation Neural Network with various Non-linear  activation functions in PCA space with help of PyBrain for Supervised Hand Written Digit Recognition.\\
-& I tried to use Convolutional Neural Network and Auto Encoders for better Supervised Hand Written Digit Recognition in python.\\\multicolumn{2}{c}{}\\
+& Compared kMeans with PCA and GMM learnt using EM algorithm with PCA for Unsupervised clustering\\
+& Learnt Neural Network with Non-linear activation function using Standard Back Propagation method in PCA space for Supervised Clustering of Hand Written Digits with help of PyBrain in python
+\\
+& Tried to use Convolutional Neural Network and Auto Encoders for better Supervised Clusturing\\\multicolumn{2}{c}{}\\
 
+%Sentiment Mining and Domain Adaptation on Twitter dataset
 \textsc{Feb 2016} & \textbf{\href{https://github.com/kautsiitd/Sentiment-Mining}{Sentiment Mining and Domain Adaptation on Twitter dataset}} \\
-& Explored SVMs and Logistic Regression with L1 regularizer on sentiment vectors based on unigrams and bigrams comprising the classification space.\\
-& I used Lemmatization, Stemming, Removed Stop Words, Normalisation on words with intensely repeating letters and TFIDF based weighting.\\
-& Cross Validation was used for Training.\\\multicolumn{2}{c}{}\\
+& Extracted feature words using Lemmatisation and Stemming, Removed Stop Words and Normalised words with intensely repeating letters and used TFIDF based weighting for high frequency words\\
+& Explored SVMs and Logistic Regression with L1 regularizer on sentiment vectors based on unigrams and bigrams of featured words comprising the classification space, trained  using n-fold Cross Validaiton\\\multicolumn{2}{c}{}\\
 
+%Development of Artificial Intelligent Virtual Game Player and Designed GUI
 & \textbf{\href{https://github.com/kautsiitd/Games-and-BOTS}{Development of Artificial Intelligent Virtual Game Player and Designed GUI}} \\
 \textsc{Apr 2015} & Implemented MiniMax and Alpha-Beta pruning with Heuristics and achieved 5-ply for Quoridor Game.\\
 \textsc{Apr 2013} & Conceptualized BOT with 3-ply and Designed GUI for n*n "TIC TAC TOE" and "2048" in python.\\\multicolumn{2}{c}{}\\
 
+%Bayesian Network Learning for Estimation of missing Data
 \textsc{Apr 2015} & \textbf{\href{https://github.com/kautsiitd/Data-Estimation-using-Bayesian-Network}{Bayesian Network Learning for Estimation of missing Data}} \\
 & Learnt the Bayes net on healthcare dataset of more than 11000 patient records over 8 modelled diseases.\\
-& Predicted using Expectation maximization algorithm and achieved less than 25\% learning error from golden data.\\\multicolumn{2}{c}{}\\
+& Predicted using Expectation maximization algorithm and achieved less than 25\% learning error.\\\multicolumn{2}{c}{}\\
 
+%Multiple Sequence Alignment for DNA and Proteins
 \textsc{Jan 2015} & \textbf{\href{https://github.com/kautsiitd/DNA-and-Proteins-Alignment}{Multiple Sequence Alignment for DNA and Proteins}} \\
-& Implemented IDA*, DFSBnB for optimal solution and Clustal W with hill climbing for sub-optimal solution.\\
+& Implemented IDA*, DFSBnB for optimal solution, Clustal W with hill climbing for sub-optimal solution.\\
 & 1st Runner-up in sub-optimal solution with less than 5\% error from optimal solution among 142 students.\\\multicolumn{2}{c}{}\\
 
+%Designed a Processor in Logisim for interpreting Simple RISC Assembly Language
 \textsc{Apr 2015} & \textbf{\href{https://github.com/kautsiitd/Simple-RISC-Interpretor-in-Logisim}{Designed a Processor in Logisim for interpreting Simple RISC Assembly Language}} \\\multicolumn{2}{c}{}\\
 
+%Formulated NP class problem into CNF SAT formula and solved using SAT Solver named MiniSat
 \textsc{Feb 2015} & \textbf{Formulated NP class problem into CNF SAT formula and solved using SAT Solver named MiniSat} \\\multicolumn{2}{c}{}\\
 
+%3D Topology Generation and Simulation of Grinding Wheel, B Tech Thesis
 \textsc{May 2016} & \textbf{3D Topology Generation and Simulation of Grinding Wheel, B Tech Thesis} \\
-\textsc{Jan 2015} & Generated active grain profiles using Image processing and Texture mapping on topographical projections.\\
-& Adapted Edge detection Canny algorithm, implemented Z Stack Method and estimated topology in MATLAB.\\
-& Creating metal removal simulation for predicting kinematic interaction between grinding wheel and workpiece.\\\multicolumn{2}{c}{}\\
+\textsc{Jan 2015} & Generated active grain profiles by Image processing and Texture mapping on topographical projections\\
+& Adapted Edge detection Canny algorithm, implemented Z Stack Method, estimated topology in MATLAB\\
+& Simulated metal removal for predicting kinematic interaction between grinding wheel and workpiece\\\multicolumn{2}{c}{}\\
 
 \end{longtable}
 
@@ -151,21 +162,20 @@ ItalicFont = Fontin-Italic.otf
 \section{Work Experience}
 \begin{tabular}{r|p{16cm}}
 
-\textsc{April 2017} & iOS Developer at \textsc{Headout} Bangalore \\
+\textsc{April 2017} & \textbf{iOS Developer at \textsc{Headout}, Bangalore} \\
  \textsc{June 2016} & Participated in two internal 1day Hackathons, built Flappy Bird like game using Sprite Kit and Location based nearby products searching feature for app.\\
 & Revamped code from basic swift files to Xibs\\
 & Revamped code base from MVC to MVVM and then to Redux type implementation in Swift using ReSwift\\
 & Included many new features of swift along with Swift 3 transition, including 3D touch, Image Parallex\\\multicolumn{2}{c}{}\\
  
- \textsc{July 2015} & Backend Developer at \textsc{Zimply} New Delhi \\
- \textsc{May 2015} & Added an extension for extracting images from Excel sheet, using VBA (Macros), decreased time by manifold\\
-& Modified Image compression on EC2 Server using PIL and Cron, reduced downloading time on app efficiently\\
+ \textsc{July 2015} & \textbf{Backend Developer at \textsc{Zimply}, New Delhi} \\
+ \textsc{May 2015} & Added an extension for extracting images from Excel sheet, using VBA (Macros)\\
+& Modified Image compression on EC2 Server using PIL and Cron, reduced downloading time on app\\
 & Designed and Created Image Tagging, Chat-Box and modelled Database in Django Framework of python\\
-& Proposed and Developed a Software with GUI in Tkinter python for Image operations, quartered effort and time\\
-& Worked on Data compression algorithms Huffman, Arithmetic encodings, analyzed more than 10 Image formats and suggested 20\% more optimal PJG format for Image compression compared to preceding format JPEG\\
-& Extended PPO (Pre-Placement Offer) from organization for value added to company during internship\\\multicolumn{2}{c}{}\\
-
-\end{tabular}
+& Proposed and Developed a Software with GUI in Tkinter python for Image operations\\
+& Worked on Data compression algorithms Huffman, Arithmetic encodings, analyzed more than 10 Image formats and suggested 20\% more optimal PJG format for Image compression compared to  JPEG\\
+\end{tabular}\\\\
+\centerline{Extended PPO (Pre-Placement Offer) from organization for value added to company during internship}\\
 
 %Section: Competitive Coding
 \section{Competitive Coding}
@@ -176,20 +186,19 @@ Sep 2015 & Accomplished 58th Global Rank among 6000+ contestants in long contest
 Jun 2015 & Positioned among Top 3 solvers in an optimization problem among 6000+ coders on CodeChef\\
 Nov 2014 & Two time Winner in IIT Delhi Coding Club organized by ACES-ACM, sponsored by HackerEarth\\
 Oct 2014 & Ranked 24th in IIT KGP online contest among 1600 worldwide participants, sponsored by HackerEarth\\
-& Best ranked 5 Star(top 1\% globally) among 1 Million coders on CodeChef Globally; max. rated BLUE (Expert) on CodeForces\\
-& Among Top .15\% contributors globally on codechef discuss, and counting\\
-
-\end{tabular}
+\end{tabular}\\\\
+Ranked 5 Star(top 1\% globally) among 1 Million coders on CodeChef Globally\\
+Among Top .15\% contributors globally on CodeChef Discuss and Maximum rated BLUE (Expert) on CodeForces\\
 
 %Section: Scholastic Achievements
 \section{Scholastic Achievements}
 \begin{tabular}{r|p{16cm}}	
 
-2016 & Minor Degree in Computer Science: Completed Minor Degree in Computer Science with GPA 8.18/10\\
-2012 & IIT Joint Entrance Examination: Secured 1329 (GE) rank among half million candidates\\
-2012 & All India Engineering Entrance Examination: Bagged 99.5 percentile among 1 million candidates\\
-2010 & U P Board Merit: District Topper and Second in Bareilly zone in High School Examination\\
-2010 & Honor Certificate: Awarded by Director, Science \& Tech. Board UP for securing 100\% marks in Maths\\
+2016 & \textbf{Minor Degree in Computer Science}: Completed Minor Degree in Computer Science with \textbf{GPA 8.18/10}\\
+2012 & \textbf{IIT Joint Entrance Examination}: Secured \textbf{1329 (GE)} rank among half million candidates\\
+2012 & \textbf{All India Engineering Entrance Examination}: Bagged \textbf{99.5} percentile among 1 million candidates\\
+2010 & \textbf{U P Board Merit}: District Topper and Second in Bareilly zone in High School Examination\\
+2010 & \textbf{Honor Certificate}: Awarded by Director, Science \& Tech. Board UP for securing \textbf{100\%} marks in Maths\\
 
 \end{tabular}
 

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017) (preloaded format=xelatex 2017.7.5)  12 AUG 2017 16:59
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017) (preloaded format=xelatex 2017.7.5)  13 AUG 2017 14:44
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -897,10 +897,10 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 * v-part:(T,H,B)=(76.58502pt, 660.1549pt, 108.30692pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
-* \textwidth=525.23788pt
+* \textwidth=529.79024pt
 * \textheight=778.91187pt
-* \oddsidemargin=-36.135pt
-* \evensidemargin=-36.135pt
+* \oddsidemargin=-38.41139pt
+* \evensidemargin=-38.41139pt
 * \topmargin=-36.135pt
 * \headheight=0.0pt
 * \headsep=0.0pt
@@ -947,28 +947,51 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 85.
 
-Overfull \hbox (33.61218pt too wide) in paragraph at lines 85--91
+Overfull \hbox (6.91983pt too wide) in paragraph at lines 85--91
 [][] 
  []
+
+
+Overfull \vbox (7.25539pt too high) has occurred while \output is active []
+
 
 [1
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 209.
- [2]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 209.
+Underfull \hbox (badness 10000) in paragraph at lines 163--179
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 163--179
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 182--192
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 182--192
+
+ []
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 218.
+[2]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 218.
  (./myCV.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 209.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 209.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 209.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 218.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 218.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 218.
  ) 
 Here is how much of TeX's memory you used:
- 22528 strings out of 492998
- 409547 string characters out of 6134492
- 489973 words of memory out of 5000000
- 26364 multiletter control sequences out of 15000+600000
+ 22529 strings out of 492998
+ 409572 string characters out of 6134492
+ 489985 words of memory out of 5000000
+ 26365 multiletter control sequences out of 15000+600000
  530784 words of font info for 42 fonts, out of 8000000 for 9000
  1349 hyphenation exceptions out of 8191
- 35i,8n,66p,10417b,420s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 35i,8n,66p,10417b,330s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on myCV.pdf (2 pages).
