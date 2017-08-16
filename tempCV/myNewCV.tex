@@ -1,0 +1,175 @@
+\documentclass[a4paper,10pt]{article}
+
+%A Few Useful Packages
+\usepackage{fontspec} 					%for loading fonts
+\usepackage{xunicode,xltxtra,url,parskip} 	%other packages for formatting
+\RequirePackage{color,graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[big]{layaureo} 				%better formatting of the A4 page
+% an alternative to Layaureo can be
+\usepackage{fullpage} 
+\usepackage{longtable}
+\usepackage{tabularx}
+\usepackage{supertabular} 				%for Grades
+\usepackage{titlesec}					%custom \section
+
+%Setup hyperref package, and colours for links
+\usepackage{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
+
+%FONTS
+\defaultfontfeatures{Mapping=tex-text}
+%\setmainfont[SmallCapsFont = Fontin SmallCaps]{Fontin}
+%%% modified for Karol Kozio? for ShareLaTeX use
+\setmainfont[
+SmallCapsFont = Fontin-SmallCaps.otf,
+BoldFont = Fontin-Bold.otf,
+ItalicFont = Fontin-Italic.otf
+]
+{Fontin.otf}
+%%%
+
+%CV Sections inspired by: 
+%http://stefano.italians.nl/archives/26
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{0pt}{0pt}
+%Tweak a bit the top margin
+%\addtolength{\voffset}{-1.3cm}
+\addtolength{\oddsidemargin}{-1.35cm}
+\addtolength{\evensidemargin}{-1.35cm}
+\addtolength{\textwidth}{2.7cm}
+\addtolength{\topmargin}{-.3in}
+\addtolength{\textheight}{1in}
+
+%Italian hyphenation for the word: ''corporations''
+\hyphenation{im-pre-se}
+
+%-------------WATERMARK TEST [**not part of a CV**]---------------
+\usepackage[absolute]{textpos}
+
+\setlength{\TPHorizModule}{30mm}
+\setlength{\TPVertModule}{\TPHorizModule}
+\textblockorigin{2mm}{0.65\paperheight}
+\setlength{\parindent}{0pt}
+
+%--------------------BEGIN DOCUMENT----------------------
+\begin{document}
+
+%WATERMARK TEST [**not part of a CV**]---------------
+%\font\wm=''Baskerville:color=787878'' at 8pt
+%\font\wmweb=''Baskerville:color=FF1493'' at 8pt
+%{\wm 
+%	\begin{textblock}{1}(0,0)
+%		\rotatebox{-90}{\parbox{500mm}{
+%			Typeset by Alessandro Plasmati with \XeTeX\  \today\ for 
+%			{\wmweb \href{http://www.aleplasmati.comuv.com}{aleplasmati.comuv.com}}
+%		}
+%	}
+%	\end{textblock}
+%}
+
+\pagestyle{empty} % non-numbered pages
+
+\font\fb=''[cmr10]'' %for use with \LaTeX command
+
+%--------------------TITLE-------------
+\par{
+		{\Huge Kautsya \textsc{Kanu}
+	}\bigskip\par}
+
+%--------------------SECTIONS-----------------------------------
+%Section: Personal Data
+\section{Personal Data}
+
+\begin{tabularx}{\textwidth}{l r @{\extracolsep{\fill}} >{\raggedleft\arraybackslash}X r}
+    \textsc{email:}	& \href{mailto:kautsiitd@gmail.com}{kautsiitd@gmail.com} & \textsc{Phone:}     & +91 7503758135\\
+    \textsc{github:}	& \href{https://github.com/kautsiitd}{github.com/kautsiitd} & \textsc{LinkedIn:}     & \href{https://www.linkedin.com/in/kautsya-kanu-a0328293}{linkedin.com/in/kautsya-kanu-a0328293}\\
+\end{tabularx}
+
+%Section: Interests
+\section{Research Interest}
+\begin{flushleft}
+Algorithms, Machine Learning, Neural Networks, Natural Language Processing, Computer Vision
+\end{flushleft}
+
+%Section: Education
+\section{Education}
+\begin{tabular*}{\textwidth}{c @{\extracolsep{\fill}} lcr}	
+ 2016 & B.Tech. in \textsc{Production And Industrial} & \textbf{IIT Delhi}, New Delhi & GPA: 7.84/10\\
+& \textbf{Minor in Computer Science} & & GPA: 8.18/10\\
+\end{tabular*}
+
+\begin{tabular}{l|p{16cm}}	
+\textsc{Courses} & Data Structure, Artificial Intelligence, Natural Language Processing, Pattern Recognition, Analysis and Design of Algorithms, Database Management System(DBMS), Signal and Systems, Econometric Methods\\
+\end{tabular}\\
+
+%Section: Achievements
+\section{Achievements}
+\begin{tabular}{r|p{16cm}}	
+
+\textsc{Jul 2017} & Positioned among \textbf{Top 10} contributors on CodeChef Discuss among 8000+ contributors\\
+\textsc{Sep 2015} & Accomplished 58th Global Rank among 6000+ contestants in long contest, organized by CodeChef\\
+\textsc{Jun 2015} & Positioned among \textbf{Top 3} solvers in an optimization problem among 6000+ coders on CodeChef\\
+\textsc{Nov 2014} & \textbf{Two time Winner} in IIT Delhi Coding Club organized by ACES-ACM, sponsored by HackerEarth\\
+\textsc{May 2012} & \textbf{IIT Joint Entrance Examination}: Secured \textbf{1329 (GE)} rank among half million candidates\\
+\textsc{Jun 2010} & \textbf{District Topper} \& Honoured by Director of Science \& Tech. Board,UP for securing \textbf{100\%} marks in Maths\\
+\end{tabular}\\
+
+\vspace{-0.5em}
+\centering
+\begin{tabular}{lr|lr|lr}
+\textbf{CodeChef:}&Yellow Rated (\textbf{Top 1\%})&\textbf{CodeForces:}&BLUE(Expert)&\textbf{CodeChef Discuss:}&Among \textbf{Top 0.15}\%
+\end{tabular}\\
+
+%Section: Projects
+\section{Projects}
+\begin{tabular}{r|p{16cm}}
+
+%UnSupervised Decomposition of Multi Author Document
+ \textsc{May 2016} & \textbf{\href{https://github.com/kautsiitd/Unsupervised-Decomposition-of-a-Multi-Author-Document}{UnSupervised Decomposition of Multi Author Document}}\\ 
+ \textsc{Mar 2016} & N-grams, POS tagging and PQ Grams based features were explored on un-lexicalized Probabilistic Context-Free Grammar using Stanford POS Tagger and Parser to capture distinct writing styles, Elicited Segments using GMM, Trained Multinomial Naive Bayes classifier over Vital Segments using sk-learn\\
+ 
+%Named Entity Recognition for Real Estate
+\textsc{Apr 2016} & \textbf{\href{https://github.com/kautsiitd/NER-for-Real-Estate}{Named Entity Recognition for Real Estate}} \\
+& Trained CRF Model using MALLET over tokenised Real Estate data, Gazetteers related to locations, first and last names, POS tagging and RegEx as features, Explored Word Embeddings of Word2Vec model\\
+
+%Unsupervised and Supervised Hand Written Digit Recognition
+\textsc{Mar 2016} & \textbf{\href{https://github.com/kautsiitd/Unsupervised-Hand-Written-Digit-Recognition}{Unsupervised} and \href{https://github.com/kautsiitd/Supervised-Hand-Written-Digit-Recognition}{Supervised} Hand Written Digit Recognition} \\
+& \textbullet Compared kMeans with PCA \& GMM learnt using EM algorithm with PCA for Unsupervised clustering\\
+& \textbullet Learnt Neural Network with Non-linear activation function, Back Propagation in PCA space\\
+& \textbullet Tried Convolutional Neural Network and Auto Encoders for better Supervised Clustering\\
+
+%Sentiment Mining and Domain Adaptation on Twitter dataset
+\textsc{Feb 2016} & \textbf{\href{https://github.com/kautsiitd/Sentiment-Mining}{Sentiment Mining and Domain Adaptation on Twitter dataset}} \\
+& Lemmatisation, Stemming, Removal of Stop Words, Normalisation, TFIDF based weighting to extract feature words, Explored SVMs and Logistic Regression with L1 regularizer with n-fold Cross Validation\\
+
+%Development of Artificial Intelligent Virtual Game Player and Designed GUI
+\textsc{Apr 2015} & \textbf{\href{https://github.com/kautsiitd/Games-and-BOTS}{Implemented BOT using MiniMax, Alpha-Beta pruning with Heuristics for Quoridor, achieved 5-ply}} \\
+
+%Formulated NP class problem into CNF SAT formula and solved using SAT Solver named MiniSat
+\textsc{Feb 2015} & \textbf{Formulated NP class problem into CNF SAT formula and solved using SAT Solver named MiniSat} \\
+
+\end{tabular}
+
+%Section: Work Experience
+\section{Work Experience}
+\begin{tabular}{r|p{16cm}}
+
+\textsc{April 2017} & \textbf{iOS Developer at \textsc{Headout}, Bangalore} \\
+\textsc{June 2016} & Managed iOS Development from start to finish, \textbf{Featured iOS App} on Apple Store in Travel Category\\
+
+\textsc{July 2015} & \textbf{Backend Developer at \textsc{Zimply}, New Delhi (Internship)}\\
+\textsc{May 2015} & \href{https://github.com/kautsiitd/Image-Extractor-for-Excel}{Extension} for Image Extraction from Excel, Developed \href{https://github.com/kautsiitd/Image-Optimizer}{GUI} for offline Image operations, Created \href{https://github.com/kautsiitd/Image-Tagging-and-Chat-Box}{Image Tagging, Chat-Box} using Django, Worked on Image Compression algorithms and modified on EC2 server\\
+\multicolumn{2}{c}{}\\
+\end{tabular}\\
+\centerline{Extended \textbf{PPO (Pre-Placement Offer)} from organization for value added to company during internship}
+
+%Section: Technical Skills
+\section{Technical Skills}
+\begin{tabular}{r|p{15cm}}
+\textsc{Technologies} & Scikit-learn, pyBrain, NLTK, Git,  Django, XCode, SpriteKit\\ 
+\textsc{Languages} & Python, C++, Swift, MATLAB, C, JAVA, HTML, CSS, JS, mysql, LaTeX\\
+\end{tabular}
+
+\end{document}
