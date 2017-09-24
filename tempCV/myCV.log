@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017) (preloaded format=xelatex 2017.7.5)  19 AUG 2017 05:28
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017) (preloaded format=xelatex 2017.7.5)  18 SEP 2017 18:52
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -989,6 +989,6 @@ Here is how much of TeX's memory you used:
  26365 multiletter control sequences out of 15000+600000
  530784 words of font info for 42 fonts, out of 8000000 for 9000
  1349 hyphenation exceptions out of 8191
- 35i,8n,66p,10417b,327s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 35i,12n,66p,10417b,327s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on myCV.pdf (2 pages).
