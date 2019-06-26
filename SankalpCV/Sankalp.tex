@@ -1,0 +1,151 @@
+\documentclass[a4paper,10pt]{article}
+
+%A Few Useful Packages
+\usepackage{marvosym}
+\usepackage{fontspec} 					%for loading fonts
+\usepackage{xunicode,xltxtra,url,parskip} 	%other packages for formatting
+\RequirePackage{color,graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[big]{layaureo} 				%better formatting of the A4 page
+% an alternative to Layaureo can be
+\usepackage{fullpage} 
+\usepackage{longtable}
+\usepackage{supertabular} 				%for Grades
+\usepackage{titlesec}					%custom \section
+
+%Setup hyperref package, and colours for links
+\usepackage{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
+
+%FONTS
+\defaultfontfeatures{Mapping=tex-text}
+%\setmainfont[SmallCapsFont = Fontin SmallCaps]{Fontin}
+%%% modified for Karol Kozio? for ShareLaTeX use
+\setmainfont[
+SmallCapsFont = Fontin-SmallCaps.otf,
+BoldFont = Fontin-Bold.otf,
+ItalicFont = Fontin-Italic.otf
+]
+{Fontin.otf}
+%%%
+
+%CV Sections inspired by: 
+%http://stefano.italians.nl/archives/26
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{-2pt}{3pt}
+%Tweak a bit the top margin
+\addtolength{\voffset}{-.8cm}
+\addtolength{\oddsidemargin}{-1.35cm}
+\addtolength{\evensidemargin}{-1.35cm}
+\addtolength{\textwidth}{2.7cm}
+\addtolength{\textheight}{1in}
+
+%Italian hyphenation for the word: ''corporations''
+\hyphenation{im-pre-se}
+
+%-------------WATERMARK TEST [**not part of a CV**]---------------
+\usepackage[absolute]{textpos}
+
+\setlength{\TPHorizModule}{30mm}
+\setlength{\TPVertModule}{\TPHorizModule}
+\textblockorigin{2mm}{0.65\paperheight}
+\setlength{\parindent}{0pt}
+
+%--------------------BEGIN DOCUMENT----------------------
+\begin{document}
+
+\pagestyle{empty} % non-numbered pages
+
+\font\fb=''[cmr10]'' %for use with \LaTeX command
+
+%--------------------TITLE-------------
+\par{
+		{\Huge Sankalp \textsc{Rajoria}\\
+		\href{mailto:sankalp.rajoria.sr@gmail.com}{\large sankalp.rajoria.sr@gmail.com} \hfill {\Large +91 9131791500}
+	}\bigskip\par}
+
+%--------------------SECTIONS-----------------------------------
+
+%Section: Academic Details
+
+\section{Academic Details}
+\begin{tabular*}{\textwidth}{c @{\extracolsep{\fill}} ccr}
+ 2017 & GATE &  & AIR: 10\\
+ 2016 & B.Tech. in \textsc{Production And Industrial} & \textbf{IIT Delhi}, New Delhi & GPA: 7.01\\
+ 2011 & $12^{th}$, AISSCE & \textsc{Pragati Vidya Peeth}, Gwalior & 78\% \\
+ 2009 & $10^{th}$, AISSE & \textsc{St. Paul’s School}, Gwalior & 81.2\% \\
+ \end{tabular*}\\
+
+%Section: Work Experience
+\section{Work Experience}
+\begin{tabular}{r|p{18cm}}
+
+%amna Auto Industries
+\textsc{Present} & \textbf{Process Engineer at \textsc{Jamna Auto Industries Limited}, Yamunanagar} \\
+ \textsc{Jan 2019} & Improved overall equipment efficiency of Parabolic Rolling Machine from \textbf{65\%} to \textbf{70\%}\\
+ & Enhanced U Bolt packaging from single reinforced cardboard to more aesthetically pleasing shrink wrap\\
+ \multicolumn{2}{c}{}\\
+
+ %Century Pulp And Paper
+ \textsc{July 2015} & \textbf{Intern, \textsc{Century Pulp And Paper}, Lalkuan} \\
+ \textsc{May 2015} & Improved air conditioning efficiency and eased bagasse unloading within the facility\\
+& Attained net annual savings worth \textbf{USD 44,000} by implementing VAM’s \& chillers replacing AC’s\\
+& \textbf{Devised action plan} to optimize utilization of resources; Obtained \textbf{86\% reduction} in \textbf{workforce}\\
+& Developed polymer mattress; achieved overall \textbf{reduction} in \textbf{unloading time} from \textbf{6 hrs.} to \textbf{10 min.}\\
+& Identified critical process parameters affecting long unresolved problem of bagasse unloading\\
+& Presented strategic solutions based on analytics to achieve optimization of uptime\\
+& Conceptualized a Lean Implementation Strategy to \textbf{reduce} the overall \textbf{maintenance cost}\\
+\end{tabular}\\\\
+\centerline{Received \textbf{letter of recommendation} for outstanding contribution and offered to continue under \textbf{FITT}}
+
+%Section: Projects
+\section{Projects}
+\begin{tabular}{r|p{18cm}}
+
+%Development of Artificial Intelligent Virtual Game Player and Designed GUI
+\textsc{May 2016} & \textbf{Vibration Control of shaft using electromagnetic controller,} (B.Tech. Thesis)\\
+\textsc{Aug 2015} & Analysed vibrations using Finite Element Modelling, Explored elastic, inertia and forces on each element\\
+& Evaluated design parameters of scaled models using Mathematical Modelling to implement real time control\\\multicolumn{2}{c}{}\\
+
+%UnSupervised Decomposition of Multi Author Document
+\textsc{Apr 2015} & \textbf{Product-service system: from customer needs to early development phase}\\
+\textsc{Jan 2015} & Analyzed feasibility of mobile warehousing pss through surveys \& SWOT, formulated complete cash flows\\
+& Developed pss model to enhance franchise management; used probabilistic models to incorporate variabilities\\
+& Integrated a comprehensive Business Canvas Model with pss to strengthen efficacy in real-time market\\\multicolumn{2}{c}{}\\
+
+%Named Entity Recognition for Real Estate
+\textsc{Dec 2014} & \textbf{Financial Modelling and Valuation Of Brands}\\
+\textsc{Sep 2014} & Perused financial history of top 10 companies in different sectors for last 10 years, examined financial ratios\\
+& Estimated the brand value using discounted cash flows based valuation model, compared with SC performance\\
+& Analysed industry research \& financial reports to arrive at realistic values of growth rate and Beta\\\multicolumn{2}{c}{}\\
+
+%Unsupervised and Supervised Hand Written Digit Recognition
+\textsc{Sep 2014} & \textbf{Planning Inventories And Transportation Networks In Supply Chain}\\
+\textsc{Jul 2014} & Studied integrated management of Cycle Inventory, Uncertainty and Transportation Network in Supply Chains\\
+& Investigated profitability through theoretical simulation of cost on real-life case studies across four regions\\\multicolumn{2}{c}{}\\
+
+%Sentiment Mining and Domain Adaptation on Twitter dataset
+\textsc{May 2013} & \textbf{Conceptualization, design and manufacture of a leaf collecting machine}\\
+\textsc{Jan 2013} & Led team of 5 members which designed and fabricated a prototype; estimated machining and tooling cost\\
+& Conceived the idea of this mechanically operated machine and built it from the scratch within a small budget\\\multicolumn{2}{c}{}
+
+\end{tabular}
+
+%Section: Extra Curricular
+\section{Extra Curricular}
+\begin{tabular}{r|p{18cm}}
+
+Aug 2013 & Represented hostel in Inter-Hostel Cricket Tournament\\
+Sep 2013 & 1st runner-up, Inter-hostel football tournament\\
+Jun 2013 & 2nd runner-up, Inter-hostel badminton league\\
+
+\end{tabular}\\
+
+%Section: Interests
+\section{Other interests}
+\begin{flushleft}
+Meeting new people, Exploring diverse cultures, Travelling, Music, Cricket
+\end{flushleft}
+
+\end{document}
