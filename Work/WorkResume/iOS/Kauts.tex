@@ -1,0 +1,255 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+% \vspace{\topsep} % Hacky fix for awkward extra vertical space
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{Kauts}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+ 
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Kautsya}{Kanu}{
+\href{mailto:kautsiitd@gmail.com}{kautsiitd@gmail.com} | +91-7503758135 | \href{https://www.kautsya.in}{kautsya.in}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.3\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{I.I.T. Delhi}
+\descript{Btech in Prod. and Industrial}
+\location{Jul 2016 | GPA: 7.84/10}
+
+\subsection{}
+\descript{Minor in Computer Science}
+\location{Jul 2016 | GPA: 8.18/10}
+\sectionsep
+
+\subsection{12\textsuperscript{th} CBSE}
+\location{May 2012 | Percentage: 89.4}
+\sectionsep
+
+\subsection{10\textsuperscript{th} U.P. Board}
+\location{May 2010 | Percentage: 87.0}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links}
+Github:// \href{https://github.com/kautsiitd}{\bf kautsiitd} \\
+LinkedIn://  \href{https://www.linkedin.com/in/kautsya-kanu-a0328293}{\bf kautsya-kanu-a0328293} \\
+CodeChef://  \href{https://www.codechef.com/users/kauts\_kanu}{\bf kauts\_kanu} \\
+CodeChefDiscuss://  \href{https://discuss.codechef.com/users/70101/kauts\_kanu}{\bf kauts\_kanu} \\
+StackOverflow://  \href{https://stackoverflow.com/users/4614493/kautsya-kanu?tab=profile}{\bf kautsya-kanu}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Languages}
+\location{
+\begin{tabular}{@{}p{0.95cm}p{1.33cm}p{1cm}p{1.33cm}}
+Swift & \score{4}{4} & Python & \score{3}{4}\\
+Obj-C & \score{3}{4} & \LaTeX\ & \score{3}{4}\\
+C++ & \score{2}{4} &&\\
+\end{tabular}
+}
+\descript{Other:}
+\location{
+Java \textbullet{} SQL \textbullet{} Shell \textbullet{} VBA\\
+JSON \textbullet{} XML \textbullet{} HTML \textbullet{} CSS \textbullet{}  JS
+}
+\sectionsep
+
+\subsection{Tools}
+\location{
+Git \textbullet{} SourceCode \textbullet{} Xcode \textbullet{} Django
+}
+\sectionsep
+
+\subsection{OS}
+\location{
+MacOS \textbullet{} Ubuntu \textbullet{} Linux \textbullet{} Windows
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     TEST SCORES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Test Scores}
+\descript{IIT JEE}
+\detail{Jul 2012 |} \textbf{1329(GE)/5 million+}
+
+\descript{AIEEE}
+\location{Jul 2012 | 99.5 percentile}
+
+\descript{UP Board Merit}
+\detail{May 2010 |} \textbf{District Topper}
+
+\descript{Honor Certificate}
+\detail{May 2010 | Awarded by Director of Science \& Technology Board,UP for securing} \textbf{100\%} \detail{marks in Maths}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Courses}
+Artificial Intelligence\\
+Natural Language Processing\\
+Machine Learning\\
+Analysis and Design of Algorithms\\
+Computer Architecture\\
+Database Management System\\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.69\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+\runsubsection{OYO}
+\profession{| iOS Developer | \href{https://apps.apple.com/in/app/oyo-search-book-hotel-rooms/id988141624}{Link}} \hfill \textbf{\#3 in Travel}\\
+\location{Dec 2017 - Present | Gurgaon, India \hfill 91.2K+ Ratings: 4.7/5}
+\vspace{\topsep}
+\begin{tightemize}
+\item Responsible for Code review of \textbf{4} devs; Interviewed many candidates for iOS team\\
+\item Managed stake holder across \textbf{4+} teams to deliver Wizard, Search and many projects\\
+\item Experienced Obj-C \& moved to Swift while exploring \textbf{VIPER} from MVC\\
+\item Suggested \& Implemented UX improvements increasing notification subscriptions\\
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Headout}
+\profession{| iOS Developer | \href{https://apps.apple.com/in/app/headout-tours-activities/id899327000}{Link}}\\
+\location{Jun 2016 - April 2017 | Bangalore, India \hfill 1K+ Ratings: 4.7/5}
+\begin{tightemize}
+%\item Sole developer of iOS App which \textbf{Featured} on App Store in \textbf{Travel}\\
+\item Managed \textbf{iOS Development throughout} while \textbf{Featured} on App Store in \textbf{Travel}\\
+\item Explored Swift from scratch along with MVC, Singleton, \textbf{Decorator Design Patterns}\\
+\item Dived into \textbf{Multi-Threading, ARC}, Developer Tools, \textbf{SpriteKit} \& Core Animations\\
+\item Migrated to \textbf{MVVM}; Familiarised with AB-Experiments \& Google Analytics\\
+\item Integrated Peek \& Pop, Quick Actions, Deep Linking, Soptlight Search \& others\\
+\item Considered \textbf{XIBs, Storyboards} for autoLayout; Explored Google location APIs\\
+\item Introduced \textbf{SwiftLint} enforcing Swift conventions \& Markups for Documentation\\
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Zimply}
+\profession{| Backend Developer Intern}\\
+\location{May 2015 - July 2015 | Delhi, India}
+\begin{tightemize}
+\item Created \detail{\href{https://github.com/kautsiitd/Image-Tagging-and-Chat-Box}{Image Tagging, Chat-Box}} and modelled Database in \textbf{Django}\\
+\item Developed \detail{\href{https://github.com/kautsiitd/Image-Optimizer}{Software}} with GUI for offline Image operations using \textbf{Tkinter \& PIL}\\
+\item Worked on Image Compression algorithms, modified on \textbf{EC2} server using Cron\\
+\item Added an \detail{\href{https://github.com/kautsiitd/Image-Extractor-for-Excel}{Extension}} for Image Extraction from Excel using \textbf{VBA}
+\end{tightemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COMPETITIVE PROGRAMMING
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Competitive Programming}
+\location{
+\begin{tabular}{lrl}
+Sep 2017		& 7\textsuperscript{th}/9500+	& Long Contest by CodeChef\\
+Sep 2017		& Top 3/9500+	& \textbf{Two times} in Optimisation problem by CodeChef\\
+Aug 2017		& Top 3/8000+  & Contributor on CodeChef Discuss\\
+Nov 2014		& Winner		& \textbf{Two times} in IIT Delhi Coding Club organized by\\ &&ACES-ACM sponsored by HackerEarth\\
+\end{tabular}}
+
+\centering
+\begin{tabular}{lrlr}
+\textbf{CodeChef:} & Orange Rated \textbf{(Top 0.2\%)} & \textbf{CodeForces:} & BLUE(Expert)
+\end{tabular}
+
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PROJECTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Projects}
+\project{UnSupervised Decomposition of Multi Author Document}
+\descript{\hfill| \href{https://github.com/kautsiitd/Unsupervised-Decomposition-of-a-Multi-Author-Document/blob/master/Report/unsupervised-decomposition-multi/final_report.pdf}{Link}}
+\location{Mar-May 2016 | Prof Mausam, IIT Delhi, Affilate Faculty - University of Washington}
+\begin{tightemize}
+\item Captured distinct writing styles using Stanford POS Tagger \& Parser
+\item Featured over POS tagging, PQ \& N-Grams; Elicited Segments using GMM
+\item Trained Multinomial Naive Bayes classifier over Vital Segments using sk-learn
+\end{tightemize}
+\projectsep
+
+\project{Artificial Intelligent Virtual Game Player with GUI}
+\descript{\hfill| \href{https://github.com/kautsiitd/Games-and-BOTS}{Link}}
+\detail{}
+\begin{tightemize}
+\item Achieved 5-ply using MiniMax \& Alpha-Beta pruning with Heuristics in Quoridor\\
+\item Conceptualized BOT with 3-ply \& Designed GUI for n*n TIC TAC TOE \& 2048 game\\
+\end{tightemize}
+\projectsep
+
+\project{Named Entity Recognition for Real Estate}
+\profession{\hfill| \href{https://github.com/kautsiitd/NER-for-Real-Estate}{Link}}\\
+\detail{}
+\begin{tightemize}
+\item Featured over Tokenised Real Estate Data, Gazetteers, POS Tagging \& RegEx
+\item Trained CRF Model using MALLET; Explored Word Embeddings of Word2Vec
+\end{tightemize}
+\projectsep
+
+\project{\href{https://github.com/kautsiitd/Unsupervised-Hand-Written-Digit-Recognition}{Unsupervised} and \href{https://github.com/kautsiitd/Supervised-Hand-Written-Digit-Recognition}{Supervised} Digit Recognition}\\
+\detail{}
+\begin{tightemize}
+\item Compared kMeans \& GMM learnt using EM in PCA for Unsupervised Clustering
+\item Learnt NN in PCA space; Tried CNN \& Auto Encoders for Supervised Clustering
+\end{tightemize}
+\projectsep
+
+%\project{Sentiment Mining and Domain Adaptation}
+%\descript{\hfill| \href{https://github.com/kautsiitd/Sentiment-Mining}{Link}}
+%\detail{}
+%\begin{tightemize}
+%\item Extracted feature words using Lemmatisation, Stemming, Normalisation, TFIDF
+%\item Explored SVMs \& Logistic Regression with L1 regularizer, n-fold Cross Validation
+%\end{tightemize}
+%\projectsep
+
+\project{Designed a Processor in Logisim for interpreting RISC}
+\profession{\hfill| \href{https://github.com/kautsiitd/Simple-RISC-Interpretor-in-Logisim}{Link}}
+\projectsep
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}
