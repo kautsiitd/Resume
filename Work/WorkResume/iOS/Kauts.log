@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018) (preloaded format=xelatex 2019.2.16)  16 OCT 2019 17:31
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018) (preloaded format=xelatex 2019.2.16)  22 OCT 2019 07:05
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1270,11 +1270,6 @@ Overfull \hbox (10.2166pt too wide) in paragraph at lines 80--80
 [][]  
  []
 
-
-LaTeX Font Warning: Font shape `TU/Raleway-Medium(0)/bx/n' undefined
-(Font)              using `TU/Raleway-Medium(0)/m/n' instead on input line 191.
-
-
 \g__fontspec_family_Raleway-SemiBold_int=\count296
 .................................................
 . fontspec info: "defining-font"
@@ -1292,24 +1287,24 @@ LaTeX Font Warning: Font shape `TU/Raleway-Medium(0)/bx/n' undefined
 [1
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 255.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 255.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 254.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 254.
  (./Kauts.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 255.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 255.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 254.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 254.
 Package rerunfilecheck Info: File `Kauts.out' has not changed.
 (rerunfilecheck)             Checksum: 9CC29C7854911CFA6B8110F1B8724269.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 255.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 254.
  ) 
 Here is how much of TeX's memory you used:
- 29881 strings out of 492970
- 599889 string characters out of 6133938
- 725495 words of memory out of 5000000
- 33528 multiletter control sequences out of 15000+600000
+ 29879 strings out of 492970
+ 599836 string characters out of 6133938
+ 725494 words of memory out of 5000000
+ 33526 multiletter control sequences out of 15000+600000
  533696 words of font info for 73 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  62i,14n,118p,10535b,1076s stack positions out of 5000i,500n,10000p,200000b,80000s
