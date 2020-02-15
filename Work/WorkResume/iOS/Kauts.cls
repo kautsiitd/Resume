@@ -51,7 +51,10 @@ Last Updated on \today
 } \\[5pt]
 \centering{
 \color{headings}
-\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{11pt}{14pt}\selectfont #3}
+\fontspec[Path = fonts/raleway/]{Raleway-Medium}
+\fontsize{11pt}{14pt}
+\selectfont #3
+}
 \noindent\makebox[\linewidth]{\color{headings}\rule{\paperwidth}{0.4pt}}
 \vspace{-15pt}
 }
@@ -80,11 +83,26 @@ Last Updated on \today
 
 % Profession command
 \newcommand{\profession}[1]{
-\color{subheadings}\raggedright\scshape\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{11pt}{13pt}\selectfont {#1} \normalfont}
+\color{subheadings}\scshape\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{11pt}{13pt}\selectfont {#1} \normalfont}
 
 % Project command
 \newcommand{\project}[1]{
-\color{subheadings}\raggedright\scshape\fontspec[Path = fonts/raleway/]{Raleway-SemiBold}\fontsize{12pt}{14pt}\selectfont {#1} \normalfont}
+\color{subheadings}
+\scshape\fontspec[Path = fonts/raleway/]{Raleway-SemiBold}
+\fontsize{12pt}{14pt}
+\selectfont {#1} \normalfont}
+
+% Research command
+\newcommand{\research}[5]{
+\color{subheadings}
+\fontsize{12pt}{14pt}
+\scshape\fontspec[Path = fonts/raleway/]{Raleway-SemiBold}\selectfont {#1}
+\scshape\fontspec[Path = fonts/raleway/]{Raleway-Light}\selectfont {#2}
+\scshape\fontspec[Path = fonts/raleway/]{Raleway-SemiBold}\selectfont {#3}
+\fontspec[Path = fonts/lato/]{Lato-RegIta}\selectfont {#4}
+\fontspec[Path = fonts/lato/]{Lato-Lig}\selectfont {#5}
+\normalfont
+}
 
 % Location command
 \newcommand{\location}[1]{
@@ -93,6 +111,9 @@ Last Updated on \today
 % Detail command
 \newcommand{\detail}[1]{
 \color{headings}\raggedright\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{10pt}{12pt}\selectfont {#1} \normalfont}
+
+% Comment Command
+\newcommand{\comment}[1]{}
 
 % Bullet Lists with fewer gaps command
 \newenvironment{tightemize}{

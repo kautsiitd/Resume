@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018) (preloaded format=xelatex 2019.2.16)  22 OCT 2019 07:05
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018) (preloaded format=xelatex 2019.2.16)  28 JAN 2020 16:32
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1270,6 +1270,26 @@ Overfull \hbox (10.2166pt too wide) in paragraph at lines 80--80
 [][]  
  []
 
+
+LaTeX Font Warning: Font shape `TU/Lato-Bol(0)/m/sc' undefined
+(Font)              using `TU/Lato-Bol(0)/m/n' instead on input line 197.
+
+
+LaTeX Font Warning: Font shape `TU/Lato-Bol(0)/bx/sc' undefined
+(Font)              using `TU/Lato-Bol(0)/bx/n' instead on input line 197.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 197.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\fontspec' on input line 197.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\uppercase' on input line 197.
+
 \g__fontspec_family_Raleway-SemiBold_int=\count296
 .................................................
 . fontspec info: "defining-font"
@@ -1284,29 +1304,75 @@ Overfull \hbox (10.2166pt too wide) in paragraph at lines 80--80
 . - 'small caps'  (m/sc) with NFSS spec.:
 . <->"[fonts/raleway/Raleway-SemiBold]/OT:script=latn;language=DFLT;+smcp;"
 .................................................
+\g__fontspec_family_Raleway-Light_int=\count297
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'Raleway-Light(0)' created for font 'Raleway-Light' with options
+. [Path = fonts/raleway/].
+.  
+.  This font family consists of the following NFSS series/shapes:
+.  
+. - 'normal' (m/n) with NFSS spec.:
+. <->"[fonts/raleway/Raleway-Light]/OT:script=latn;language=DFLT;"
+. - 'small caps'  (m/sc) with NFSS spec.:
+. <->"[fonts/raleway/Raleway-Light]/OT:script=latn;language=DFLT;+smcp;"
+.................................................
+\g__fontspec_family_Lato-RegIta_int=\count298
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'Lato-RegIta(0)' created for font 'Lato-RegIta' with options
+. [Path = fonts/lato/].
+.  
+.  This font family consists of the following NFSS series/shapes:
+.  
+. - 'normal' (m/n) with NFSS spec.:
+. <->"[fonts/lato/Lato-RegIta]/OT:script=latn;language=DFLT;"
+. - 'small caps'  (m/sc) with NFSS spec.: 
+.................................................
+
+LaTeX Font Warning: Font shape `TU/Lato-RegIta(0)/m/sc' undefined
+(Font)              using `TU/Lato-RegIta(0)/m/n' instead on input line 261.
+
+
+Underfull \hbox (badness 10000) in alignment at lines 295--300
+[][]
+ []
+
+
+Overfull \hbox (1.36983pt too wide) in alignment at lines 303--309
+[][] []
+ []
+
+
+Underfull \hbox (badness 10000) in alignment at lines 324--326
+[][]
+ []
+
 [1
 
-]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 254.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 254.
+] [2]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 351.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 351.
  (./Kauts.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 254.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 254.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 351.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 351.
 Package rerunfilecheck Info: File `Kauts.out' has not changed.
-(rerunfilecheck)             Checksum: 9CC29C7854911CFA6B8110F1B8724269.
+(rerunfilecheck)             Checksum: 2E721A49A3B82ECEEBB2408D354BC62A.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 254.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 351.
  ) 
 Here is how much of TeX's memory you used:
- 29879 strings out of 492970
- 599836 string characters out of 6133938
- 725494 words of memory out of 5000000
- 33526 multiletter control sequences out of 15000+600000
- 533696 words of font info for 73 fonts, out of 8000000 for 9000
+ 29926 strings out of 492970
+ 601438 string characters out of 6133938
+ 742026 words of memory out of 5000000
+ 33558 multiletter control sequences out of 15000+600000
+ 533800 words of font info for 86 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  62i,14n,118p,10535b,1076s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on Kauts.pdf (1 page).
+Output written on Kauts.pdf (2 pages).
